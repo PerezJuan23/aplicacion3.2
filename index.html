@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/images (2).jpg','imagenes/images (2).png','imagenes/20160414_154705[1].png','imagenes/20160414_154726-1-1[1].png','imagenes/20160414_155512[1].png','imagenes/20160414_160006[1].png','imagenes/20160414_180604.jpg','imagenes/20160414_154705.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"
+   data-back-btn-theme="a">
+      <h1>CONTAMINACIÓN</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   <center>
+     <div>
+        <img src="imagenes/images (3).jpg"width="55%" height="41%"> </div>
+  </div>
+   </center>
+    
+    
+
+<div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>¿Qué es la contaminación?</h2> 
+     </a>
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Tipos de contaminación</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Causas</h2>
+     </a> 
+   </li>
+      <li class="ui first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Consecuencias</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Medidas preventivas</h2>
+     </a> 
+   </li>
+
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Comó solucionar</h2>
+     </a> 
+   </li>
+   
+    <li class="ui first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Contaminación en mi comunidad</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Imàgenes para Reflexionar</h2>
+     </a> 
+   </li>
+  </ul>
+  
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>Aplicación tres</h4>
+     <img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Juan Pérez Hernández</h4>
+   </div>
+</div>
+</div>       
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>¿Qué es?</h1>
+   </div>
+  <div data-role="content" align="center">
+   <div>
+     <img src="imagenes/images (3).jpg"width="48%" height="48%">
+     <p><strong>Contaminación</strong></p>
+       <p>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.
+
+Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</p>
+  <br>
+  <br>
+  <br>
+  
+   <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+    <P>Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.
+
+La población humana crece según una progresión geométrica y la demanda de alimentos y necesidades básicas para la vida del hombre son cada vez mayores. El aumento en el consumo de diversos productos y desechos, provocados por  el ser humano, trae como consecuencia la generación de sustancias tóxicas.</P>
+    <img src="imagenes/descarga.jpg"width="55%" height="48%">
+   </div> 
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <center>
+  <h4>Aplicación tres</h4>
+     <img src="imagenes/mdpi.png" width="46" height="46">
+    <h4>Juan Pérez Hernández</h4>
+    </center>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Tipos de contaminación</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+        <p> Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son.</p>
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1>
+          <img src="imagenes/tipos-causas-contaminacion-ambiental-T-bCmbhn.png"width="69%" height="52%">
+        <div align="left">
+          <p><strong>La contaminación puede ocurrir, en el suelo, la tierra y el aire.
+            
+            Se puede dividir en clases según los agentes contaminantes o el medio afectado: </strong><br>
+          </p>
+          <p>&nbsp;</p>
+          <blockquote>
+            <p> 1.-Contaminación Atmosférica: producto de las emisiones de gases tóxicos a la atmósfera terrestre, como el dióxido de carbono. <br>
+            </p>
+            <p>2.-Contaminación del Agua: presencia de desechos en el agua,  como los vertidos de industrias y las aguas servidas. </p>
+            <p align="left">3.-Contaminación del Suelo: presencia de desechos en el suelo, a causa de actividades agrícolas y ganaderas.
+            </p>
+            <p align="left">4.-Contaminación Sonora: presencia de altos decibelios en algún lugar determinado. </p>
+            <p align="left">5.-Contaminación Química: un compuesto químico se introduce en el medio.
+            </p>
+            <p align="left">6.-Contaminación Radiactiva: dispersión de materiales radiactivos accidentalmente.
+            </p>
+            <p align="left">7.-Contaminación Térmica: emisión de fluidos a elevada temperatura.
+            </p>
+            <p align="left">8.-Contaminación Electromagnética: radiaciones del espectro electromagnético que son perjudiciales para los seres vivos.
+            </p>
+            <p align="left">9.-Contaminación Microbiológica: Producida  por microorganismos, como en la manipulación inadecuada de alimentos.  </p>
+          </blockquote>
+          <div data-role="collapsible" data-content-theme="false">
+            <h1> Imagenes</h1>
+         <center>
+
+           <p><img src="imagenes/images (11).jpg"width="71%" height="40%">
+             <br>
+              <p><img src="imagenes/images (9).jpg"width="69%" height="40%"></p>
+           <p><img src="imagenes/images (2).jpg"width="68%" height="40%"></p>
+         </center>
+      </div>
+    </p></div>   
+    </div>
+  </div>
+  </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+    <center>
+    <h4>Aplicacion tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+    </div>
+</div>
+</div>    
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Causas</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+        <h1> Los principales causantes de la contaminación ambiental son:</h1>
+        <blockquote>
+          <p align="left"><strong>• desechos sólidos domésticos.          </strong></p>
+          <p align="left"><strong>• desechos sólidos industriales</strong>.</p>
+          <p align="left"><strong> • exceso de fertilizante y productos químicos</strong>.</p>
+          <p align="left"><strong> • tala</strong>.</p>
+          <p align="left"><strong> • quema</strong>.</p>
+          <p align="left"><strong> • basura</strong>.</p>
+          <p align="left"><strong> • el monóxido de carbono de los vehículos</strong>.</p>
+          <p align="left"><strong> • desagües de aguas negras o contaminadas al mar o ríos. </strong></p>
+        </blockquote>
+        <img src="imagenes/images (11).jpg"width="66%" height="50%">  
+        <br>
+        <br>
+        <img src="imagenes/9.jpg"width="65%" height="50%">  
+        
+
+                <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+        <p>Muchas de las causas del deterioro ambiental es debido a : la sobreexplotación , destrucción del hábitat , la contaminación , la erosión y la deforestacion . Estudios realizados dicen que el deterioro del medio ambiente provoca el 21% de los problemas de salud que sufre la población mundial . </p>
+        <img src="imagenes/descarga (2).jpg"width="65%" height="50%">
+    </div>   
+    </div>
+  </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+    </div>
+</div>
+</div>      
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Consecuencias</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+           <h1>Consecuencias</h1>
+           <p><img src="imagenes/images.jpg"width="60%" height="50%">
+           </p>
+      <p> La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular
+      por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. </p>
+        <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1>
+         <p>Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.La contaminacion al medio atenta contra la vida de plantas, animales y personas, genera daños físicos en los individuos, convierte en un elemento no consumible al agua y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole.</p>
+   
+           <img src="imagenes/images (7).jpg"width="60%" height="50%">  
+         <p>De acuerdo con esta regla, la fecha más tardía posible para Semana Santa sería el 25 de Abril, la próxima ocurrencia será en 2038. La más temprana el 22 de Marzo, en 2285. La mayoría de las veces, la Semana Santa cae durante la primera semana de Abril.</p>
+           <img src="imagenes/pelicano.jpg"width="60%" height="50%">
+          <p>Las consecuencias en la salud por la presencia de Dióxido de Sulfuro y Dióxido de Nitrógeno, que son dos de los agentes más perjudiciales para la salud, son desde irritación de ojos, nariz y garganta hasta infecciones respiratorias, como bronquitis y neumonía. Y a largo plazo puede significar infecciones respiratorias crónicas, cáncer de pulmón, problemas cardíacos e incluso daño cerebral y en el sistema nervioso.</p>
+            <img src="imagenes/images (15).jpg"width="60%" height="50%"> 
+         
+        <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+         <h1>Calentamiento global</h1>  
+           <p>La contaminación está acabando con la vida de muchas especies. Cada día aumenta su proporción en nuestro planeta siendo el ser humanso el mayor causante de esta avería, sabiendo que el humanso, el ser más inteligente sería tan incapaz de cuidar su propio planeta... Ahora estamos en el siglo XXI, ha empeorado las cosas ya que han inventado tantos materiales químicos que están dañando demasiado a nuestro planeta. </p>
+           <p><img src="imagenes/images (14).jpg"width="60%" height="50%">
+           </p>
+           <p><img src="imagenes/images (1).jpe"width="60%" height="50%">
+           </p>
+           <p align="left"> La polución, la basura, la destrucción de la capa de ozono son factores que destruyen el medio ambiente. Puntos principales en contaminación, fábricas que despiden mucho humo que contamina el aire que respiramos.
+</p>
+        </div>
+    </div>
+  </div>
+  </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+   <center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+   </div>
+  </div>
+  </div>
+</div>
+
+   
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+    <h1>Medidas de prevención</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p> <strong>PREVENCION DE LA CONTAMINACION AMBIENTAL</strong></p>
+      <blockquote>
+        <p align="left">• no quemar ni talar plantas.</p>
+        <p align="left">• controlar el uso de fertilizantes y pesticidas.</p>
+        <p align="left">• no botar basura en lugares inapropiados .       </p>
+        <p align="left">• regular el servicio de aseo urbano.</p>
+        <p align="left"> • crear conciencia ciudadana .       </p>
+        <p align="left">• crear vías de desagües para las industrias que no lleguen a los mares ni ríos utilizados para el servicio o consumo del hombre ni animales.</p>
+        <p align="left"> • controlar los derramamientos accidentales de petróleo .       </p>
+        <p align="left">• controlar los relaves mineros.</p>
+      </blockquote>
+      <p><img src="imagenes/images (2).jpe"width="65%" height="33%">        </p>
+    <img src="imagenes/images (4).jpe"width="65%" height="33%"> 
+      </div>
+    </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+  </div>
+  </div>
+</div>      
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Comó solucionar</h1>
+   </div>
+  <div data-role="content" align="center">
+   <div>
+     <img src="imagenes/images (16).jpg"width="65%" height="33%">
+     <p>¿Cómo podemos colaborar?</p>
+     <blockquote>
+       <p align="left">1.-Utilización de catalizadores en los coches para disminuir los gases contaminantes que despiden.</p>
+       <p align="left"> 2.-Empleo del transporte público y medios ecológicos para contaminar menos.
+         Recuperación de aguas: se pueden recuperar de forma química a través de tratamientos biológicos, con organismos que descomponen la materia orgánica en nitrato y en dióxido de carbono.       </p>
+       <p align="left">3.-Eliminación de acumulación de nutrientes en lagos pequeños: estos nutrientes provienen de restos de plantas muertas que podrían provocar eutrofización del agua.</p>
+       <p align="left"> 4.-No abusar de fertilizantes y pesticidas en cultivos y cosechas: para poder eliminar el nitrato del suelo se utilizan métodos biológicos como el cultivo de bacterias desnitrificantes.       </p>
+       <p align="left">5.-Reciclar es una actividad en la que todos podemos colaborar: separar  los materiales de forma correcta y procurar que su recogida selectiva se realice en el punto de origen para no contaminar al transportarse.</p>
+       <p align="left"> 6.-Evitar hacer ruidos molestos: porque la contaminación sonora es una de las causas principales de molestias a nivel psicológico como el estrés.</p>
+       <p align="left">7.-Al comprar productos para el hogar, procurar que sean lo menos contaminantes posible. 
+         Reforestación: recuperar áreas donde se ha producido una tala indiscriminada de árboles y plantas. 
+         Ahorrar agua y  buscar métodos para reciclarla: el agua que utilizamos en los hogares se puede reutilizar.</p>
+       <p align="left"> 8.-Uso de energías alternativas como la solar y la eólica.</p>
+     </blockquote>
+     <p><img src="imagenes/descarga (1).jpe"width="64%" height="42%">
+     </p>
+      <p><img src="imagenes/descarga (2).jpe"width="64%" height="42%">
+      <p>Se necesita un cambio importante en la sociedad para que las generaciones futuras tengan un lugar limpio.</p>
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+ <center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Contaminación en mi comunidad</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h1>Contaminación en San Pablo Ahuatempan</h1>
+      <p><strong>La contaminación ambiental y suelo</strong></p>
+      <img src="imagenes/20160414_155400[1].png"width="60%" height="50%">
+      <p>La contaminación ambiental es también la incorporación a los cuerpos receptores de sustancias sólidas, liquidas o gaseosas, o mezclas de ellas, siempre que alteren desfavorablemente las condiciones naturales del mismo, o que puedan afectar la salud, la higiene o el bienestar del público.
+      </p>
+      <p><img src="imagenes/20160414_160626[1].png"width="60%" height="50%"></p>
+      <p>La contaminación del suelo produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.</p>
+     <p> <strong>Contaminación Visual</strong></p>
+      
+      <p>La contaminación visual se refiere al abuso de ciertos elementos “no arquitectónicos” que alteran la estética, la imagen del paisaje tanto rural como urbano, y que generan, a menudo, una sobreestimulación visual agresiva, invasiva y simultánea.</p>
+      <p>La contaminación del aire es provocada por diversas sustancias en el aire, como óxidos de azufre y nitrógeno, monóxido de carbono, material compuesto por partículas, y compuestos orgánicos volátiles (COV). Los COV son materiales que, en presencia de la luz del sol, son capaces de producir gas ozono en la capa más baja de la atmósfera de la Tierra (la tropósfera). El ozono que se encuentra en la tropósfera puede producir una calidad de aire inferior y la aparición de “esmog”.</p>
+      <div data-role="collapsible" data-content-theme="false">
+         <h1>Imàgenes</h1>
+         <p>&nbsp;</p>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/20160414_155512[1].png',1)"><img src="imagenes/descarga (4).jpe" width="485" height="298" id="Image31"></a></p>
+         <p>&nbsp;</p>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/20160414_154705.jpg',1)"><img src="imagenes/descarga (4).jpe" width="485" height="298" id="Image32"></a></p>
+         <p>&nbsp;</p>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/20160414_154726-1-1[1].png',1)"><img src="imagenes/descarga (4).jpe" width="485" height="298" id="Image33"></a></p>
+         <p>&nbsp;</p>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/20160414_180604.jpg',1)"><img src="imagenes/descarga (4).jpe" width="485" height="298" id="Image34"></a></p>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p> 
+       </div>
+       
+    </div>
+  </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+ <center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>
+    </div>
+</div>
+</div>     
+   
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Imàgenes para reflexionar</h1>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/iframe_indexwow.html" style="width:480px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+  </div>
+   <div data-role="content" align="center">
+ 
+  </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+<center>
+    <h4>Aplicación tres</h4>
+    <img src="imagenes/mdpi.png" height="46" width="46">
+      <h4>Juan Pérez Hernández</h4>
+      </center>   
+   </div>   
+</div>
+</div>  
+   
+</body>
+</html>
